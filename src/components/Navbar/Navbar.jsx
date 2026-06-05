@@ -121,9 +121,9 @@ export default function Navbar() {
 
         {/* Auth Button */}
         <li>
-          <button className={styles.authBtn} onClick={() => handleNavClick('#auth')}>
+          <a href="/login" className={styles.authBtn}>
             Login/Signup
-          </button>
+          </a>
         </li>
       </ul>
     </nav>

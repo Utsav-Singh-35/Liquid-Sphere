@@ -62,10 +62,11 @@
 
 /* Auth Button */
 .authBtn {
-  padding: 0.6rem 1.8rem;
-  font-weight: 500;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  padding: 0.7rem 2rem;
+  font-weight: 600;
   font-size: 0.9rem;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.8px;
   text-transform: uppercase;
   border-radius: 50px;
   cursor: pointer;
@@ -74,12 +75,14 @@
   white-space: nowrap;
   background: #ffffff;
   color: #000000;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .authBtn:hover {
   background: #f0f0f0;
   transform: translateY(-2px);
-  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.35);
 }
 
 /* More Dropdown */

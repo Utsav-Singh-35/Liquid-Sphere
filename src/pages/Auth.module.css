@@ -1,0 +1,507 @@
+.authContainer {
+  min-height: 100vh;
+  background: #000000;
+  overflow: hidden;
+}
+
+.backButton {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+}
+
+.backButton:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #00d9ff;
+  transform: translateX(-4px);
+}
+
+.splitContainer {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Form Side */
+.formSide {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  background: #000000;
+  position: relative;
+  z-index: 2;
+}
+
+.formContent {
+  width: 100%;
+  max-width: 440px;
+  animation: fadeInLeft 0.8s ease-out;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.header {
+  margin-bottom: 2.5rem;
+}
+
+.header h1 {
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.5px;
+}
+
+.header p {
+  font-size: 1rem;
+  color: #888888;
+  font-weight: 300;
+}
+
+.errorMessage {
+  padding: 1rem;
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: 8px;
+  color: #f87171;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formGroup label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #aaaaaa;
+  letter-spacing: 0.2px;
+}
+
+.formGroup input {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  font-size: 0.95rem;
+  font-family: 'Inter', sans-serif;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.formGroup input::placeholder {
+  color: #555555;
+}
+
+.formGroup input:focus {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: #00d9ff;
+  box-shadow: 0 0 0 3px rgba(0, 217, 255, 0.1);
+}
+
+.submitButton {
+  width: 100%;
+  padding: 1.1rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 0.3px;
+  background: #00d9ff;
+  color: #000000;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.submitButton:hover {
+  background: #00c4e6;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 217, 255, 0.35);
+}
+
+.submitButton:active {
+  transform: translateY(0);
+}
+
+.footer {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 0.9rem;
+  color: #777777;
+}
+
+.footer a {
+  color: #00d9ff;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #00c4e6;
+  text-decoration: underline;
+}
+
+.demoCredentials {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: rgba(0, 217, 255, 0.05);
+  border: 1px solid rgba(0, 217, 255, 0.2);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.demoCredentials p {
+  font-size: 0.85rem;
+  color: #aaaaaa;
+  margin: 0.25rem 0;
+}
+
+.demoCredentials strong {
+  color: #00d9ff;
+}
+
+.divider {
+  position: relative;
+  text-align: center;
+  margin: 2rem 0 1.5rem;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 42%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.divider::before { left: 0; }
+.divider::after { right: 0; }
+
+.divider span {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #666666;
+  background: transparent;
+  padding: 0 1rem;
+}
+
+.googleButton {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  background: #ffffff;
+  color: #444444;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.googleButton:hover {
+  background: #f8f8f8;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
+}
+
+.googleButton:active {
+  transform: translateY(0);
+}
+
+/* Video Side */
+.videoSide {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Decorative Elements */
+.decorativeElements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.glowOrb1,
+.glowOrb2,
+.glowOrb3 {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.15;
+  animation: floatOrb 20s infinite ease-in-out;
+}
+
+.glowOrb1 {
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(138, 43, 226, 0.6) 0%, transparent 70%);
+  top: 10%;
+  right: 10%;
+  animation-delay: 0s;
+}
+
+.glowOrb2 {
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(0, 217, 255, 0.6) 0%, transparent 70%);
+  bottom: 20%;
+  left: 15%;
+  animation-delay: 7s;
+}
+
+.glowOrb3 {
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(138, 43, 226, 0.5) 0%, transparent 70%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-delay: 14s;
+}
+
+@keyframes floatOrb {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(30px, -40px) scale(1.1);
+  }
+  66% {
+    transform: translate(-30px, 40px) scale(0.9);
+  }
+}
+
+.videoLogo {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  width: 50px;
+  height: 50px;
+  z-index: 3;
+}
+
+.videoText {
+  position: absolute;
+  bottom: 4rem;
+  left: 3rem;
+  z-index: 3;
+  max-width: 500px;
+}
+
+.videoText h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.videoText .highlight {
+  color: #00d9ff;
+  text-shadow: 0 0 20px rgba(0, 217, 255, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .splitContainer {
+    flex-direction: column-reverse;
+  }
+
+  .formSide {
+    flex: 1;
+    padding: 2rem 1.5rem;
+    min-height: 60vh;
+  }
+
+  .videoSide {
+    flex: none;
+    height: 40vh;
+    min-height: 300px;
+  }
+
+  .header h1 {
+    font-size: 1.85rem;
+  }
+
+  .videoText h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  }
+
+  .videoText {
+    bottom: 2rem;
+    left: 2rem;
+  }
+
+  .videoLogo {
+    top: 2rem;
+    left: 2rem;
+    width: 40px;
+    height: 40px;
+  }
+
+  .backButton {
+    top: 1rem;
+    left: 1rem;
+  }
+
+  .divider {
+    margin: 1.5rem 0 1rem;
+  }
+
+  .footer {
+    margin-top: 1.5rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .formSide {
+    padding: 1.5rem 1rem 2rem;
+    min-height: 65vh;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 4rem;
+  }
+
+  .formContent {
+    width: 100%;
+  }
+
+  .header {
+    margin-bottom: 2rem;
+  }
+
+  .header h1 {
+    font-size: 1.6rem;
+  }
+
+  .header p {
+    font-size: 0.9rem;
+  }
+
+  .form {
+    gap: 1.25rem;
+  }
+
+  .formGroup input {
+    padding: 0.9rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .submitButton {
+    padding: 1rem 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .divider {
+    margin: 1.25rem 0 1rem;
+  }
+
+  .divider span {
+    font-size: 0.75rem;
+  }
+
+  .googleButton {
+    padding: 0.95rem 1.25rem;
+    font-size: 0.9rem;
+  }
+
+  .footer {
+    margin-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .footer p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .footer a {
+    font-weight: 600;
+  }
+
+  .videoText h2 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  }
+
+  .videoSide {
+    height: 35vh;
+    min-height: 250px;
+  }
+
+  .backButton {
+    top: 1rem;
+    left: 1rem;
+    width: 40px;
+    height: 40px;
+  }
+}

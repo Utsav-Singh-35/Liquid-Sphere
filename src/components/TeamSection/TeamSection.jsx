@@ -19,7 +19,7 @@ const TEAM = [
     ],
   },
   {
-    name: ['Ankit', 'Sharma'],
+    name: ['Om', 'Singh'],
     role: 'Medical Imaging',
     links: [
       { href: 'https://github.com/', label: 'GitHub', img: githubImg },
@@ -28,7 +28,7 @@ const TEAM = [
     ],
   },
   {
-    name: ['Ranjan', 'Singh'],
+    name: ['Vikas', 'Tiwari'],
     role: 'Full Stack Development',
     links: [
       { href: 'https://github.com/', label: 'GitHub', img: githubImg },
