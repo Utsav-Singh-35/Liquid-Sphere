@@ -51,10 +51,10 @@ export default function DashboardSection() {
   return (
     <section id="dashboard" ref={sectionRef} className={styles.dashboardSection}>
       <div className={styles.header}>
-        <p className={styles.eyebrow}>INTERACTIVE DIAGNOSTIC TOOL</p>
-        <h2 className={styles.title}>MRI Analysis Dashboard</h2>
+        <p className={styles.eyebrow">INTERACTIVE DEMO</p>
+        <h2 className={styles.title}>Animation Preview Dashboard</h2>
         <p className={styles.subtitle}>
-          Upload a brain MRI scan and receive AI-powered predictions with explainable insights.
+          Experience our premium 3D liquid animations with real-time rendering and customization controls.
         </p>
       </div>
 
@@ -68,12 +68,12 @@ export default function DashboardSection() {
               <line x1="12" y1="3" x2="12" y2="15"/>
             </svg>
           </div>
-          <h3 className={styles.cardTitle}>Upload MRI Scan</h3>
-          <p className={styles.cardDesc}>Supported Formats</p>
+          <h3 className={styles.cardTitle}>Select Animation Style</h3>
+          <p className={styles.cardDesc}>Available Themes</p>
           <div className={styles.formatBadges}>
-            <span className={styles.badge}>PNG</span>
-            <span className={styles.badge}>JPG</span>
-            <span className={styles.badge}>JPEG</span>
+            <span className={styles.badge}>Liquid</span>
+            <span className={styles.badge}>Sphere</span>
+            <span className={styles.badge}>Aurora</span>
           </div>
           <div className={styles.uploadZone}>
             <input
@@ -108,7 +108,7 @@ export default function DashboardSection() {
             onClick={handleAnalyze}
             disabled={!selectedFile || isProcessing}
           >
-            {isProcessing ? 'Analyzing...' : 'Analyze MRI'}
+            {isProcessing ? 'Rendering...' : 'Preview Animation'}
           </button>
         </div>
 
@@ -120,32 +120,32 @@ export default function DashboardSection() {
               <polyline points="12 6 12 12 16 14"/>
             </svg>
           </div>
-          <h3 className={styles.cardTitle}>AI Processing</h3>
-          <p className={styles.cardDesc}>Analysis Stages</p>
+          <h3 className={styles.cardTitle}>3D Rendering</h3>
+          <p className={styles.cardDesc}>Render Pipeline</p>
           <div className={styles.stagesList}>
             <div className={`${styles.stage} ${isProcessing ? styles.stageActive : ''}`}>
               <span className={styles.stageDot}></span>
-              <span>Image Validation</span>
+              <span>Scene Setup</span>
             </div>
             <div className={`${styles.stage} ${isProcessing ? styles.stageActive : ''}`}>
               <span className={styles.stageDot}></span>
-              <span>Preprocessing</span>
+              <span>Geometry Loading</span>
             </div>
             <div className={`${styles.stage} ${isProcessing ? styles.stageActive : ''}`}>
               <span className={styles.stageDot}></span>
-              <span>Feature Extraction</span>
+              <span>Material Shading</span>
             </div>
             <div className={`${styles.stage} ${isProcessing ? styles.stageActive : ''}`}>
               <span className={styles.stageDot}></span>
-              <span>Classification</span>
+              <span>Lighting Effects</span>
             </div>
             <div className={`${styles.stage} ${isProcessing ? styles.stageActive : ''}`}>
               <span className={styles.stageDot}></span>
-              <span>Heatmap Generation</span>
+              <span>Animation Physics</span>
             </div>
             <div className={`${styles.stage} ${isProcessing ? styles.stageActive : ''}`}>
               <span className={styles.stageDot}></span>
-              <span>Report Generation</span>
+              <span>Final Rendering</span>
             </div>
           </div>
         </div>
@@ -157,69 +157,69 @@ export default function DashboardSection() {
               <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
             </svg>
           </div>
-          <h3 className={styles.cardTitle}>Prediction Results</h3>
+          <h3 className={styles.cardTitle}>Render Analytics</h3>
           
           {showResults ? (
             <>
               <div className={styles.predictionMain}>
-                <div className={styles.predictionLabel}>Prediction</div>
-                <div className={styles.predictionValue}>Glioma</div>
+                <div className={styles.predictionLabel}>Animation Type</div>
+                <div className={styles.predictionValue}>Liquid Sphere</div>
               </div>
               
               <div className={styles.metricsGrid}>
                 <div className={styles.metric}>
-                  <span className={styles.metricLabel}>Confidence</span>
-                  <span className={styles.metricValue}>97.3%</span>
+                  <span className={styles.metricLabel}>Frame Rate</span>
+                  <span className={styles.metricValue}>60 FPS</span>
                 </div>
                 <div className={styles.metric}>
-                  <span className={styles.metricLabel}>Risk Level</span>
-                  <span className={`${styles.metricValue} ${styles.riskHigh}`}>High</span>
+                  <span className={styles.metricLabel}>Quality</span>
+                  <span className={`${styles.metricValue} ${styles.riskHigh}`}>Premium</span>
                 </div>
               </div>
 
               <div className={styles.distributionSection}>
-                <p className={styles.distributionTitle}>Probability Distribution</p>
+                <p className={styles.distributionTitle}>Performance Metrics</p>
                 <div className={styles.probBar}>
                   <div className={styles.probLabel}>
-                    <span>Glioma</span>
-                    <span className={styles.probPercent}>97%</span>
+                    <span>Smoothness</span>
+                    <span className={styles.probPercent}>98%</span>
                   </div>
                   <div className={styles.probBarBg}>
-                    <div className={styles.probBarFill} style={{ width: '97%' }}></div>
+                    <div className={styles.probBarFill} style={{ width: '98%' }}></div>
                   </div>
                 </div>
                 <div className={styles.probBar}>
                   <div className={styles.probLabel}>
-                    <span>Meningioma</span>
-                    <span className={styles.probPercent}>1%</span>
+                    <span>Optimization</span>
+                    <span className={styles.probPercent}>95%</span>
                   </div>
                   <div className={styles.probBarBg}>
-                    <div className={styles.probBarFill} style={{ width: '1%' }}></div>
+                    <div className={styles.probBarFill} style={{ width: '95%' }}></div>
                   </div>
                 </div>
                 <div className={styles.probBar}>
                   <div className={styles.probLabel}>
-                    <span>Pituitary</span>
-                    <span className={styles.probPercent}>1%</span>
+                    <span>Visual Quality</span>
+                    <span className={styles.probPercent}>99%</span>
                   </div>
                   <div className={styles.probBarBg}>
-                    <div className={styles.probBarFill} style={{ width: '1%' }}></div>
+                    <div className={styles.probBarFill} style={{ width: '99%' }}></div>
                   </div>
                 </div>
                 <div className={styles.probBar}>
                   <div className={styles.probLabel}>
-                    <span>No Tumor</span>
-                    <span className={styles.probPercent}>1%</span>
+                    <span>Load Time</span>
+                    <span className={styles.probPercent}>92%</span>
                   </div>
                   <div className={styles.probBarBg}>
-                    <div className={styles.probBarFill} style={{ width: '1%' }}></div>
+                    <div className={styles.probBarFill} style={{ width: '92%' }}></div>
                   </div>
                 </div>
               </div>
             </>
           ) : (
             <div className={styles.placeholderText}>
-              <p>Results will appear here after analysis</p>
+              <p>Analytics will appear here after rendering</p>
             </div>
           )}
         </div>

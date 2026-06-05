@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
+import Logo from '../assets/Logo.png'
 import styles from './Auth.module.css'
 import { authAPI } from '../utils/api'
 
@@ -135,7 +136,10 @@ export default function Login() {
 
         {/* Right Side - Video */}
         <div className={styles.videoSide}>
-          <img src="/src/assets/footer.png" alt="NeuraSight Logo" className={styles.videoLogo} />
+          <div className={styles.videoLogoContainer}>
+            <img src={Logo} alt="Liquid Sphere" className={styles.videoLogo} />
+            <span className={styles.videoLogoText}>Liquid Sphere</span>
+          </div>
           <video className={styles.video} autoPlay muted loop playsInline>
             <source src="/src/assets/Aurora.mp4" type="video/mp4" />
           </video>

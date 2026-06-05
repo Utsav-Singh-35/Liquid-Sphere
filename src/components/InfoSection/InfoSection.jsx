@@ -7,9 +7,9 @@ import styles from './InfoSection.module.css'
 gsap.registerPlugin(ScrollTrigger)
 
 const ITEMS = [
-  { num: '01.', title: 'Brain MRI Analysis', desc: 'Detect and classify brain tumors from\nMRI scans using deep learning.' },
-  { num: '02.', title: 'High Accuracy Detection', desc: 'Optimized transfer learning models\nachieving high classification performance.' },
-  { num: '03.', title: 'Explainable AI', desc: 'Visual Grad-CAM heatmaps reveal\nwhy predictions are made.' },
+  { num: '01.', title: 'Creative Design', desc: 'Beautiful, modern interfaces crafted\nwith attention to every detail.' },
+  { num: '02.', title: 'Smooth Animations', desc: 'Fluid 3D animations and transitions\nthat bring your vision to life.' },
+  { num: '03.', title: 'Premium Quality', desc: 'Production-ready solutions built\nwith cutting-edge technology.' },
 ]
 
 export default function InfoSection() {

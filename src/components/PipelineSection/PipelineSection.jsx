@@ -9,22 +9,22 @@ gsap.registerPlugin(ScrollTrigger)
 const PIPELINE_STAGES = [
   {
     phase: 'Phase 01',
-    title: 'MRI Acquisition & Preprocessing',
-    desc: 'Validate image quality, normalize MRI scans, remove noise, and prepare data for deep learning inference.',
+    title: 'Design & Conceptualization',
+    desc: 'Transform creative vision into stunning visual concepts with careful attention to color, form, and movement.',
     color: 0x22d3ee, // Cyan
     cssGlow: styles.glowCyan,
   },
   {
     phase: 'Phase 02',
-    title: 'Deep Learning Classification Engine',
-    desc: 'EfficientNet-based architecture extracts medical imaging features and classifies tumors across multiple categories.',
+    title: '3D Modeling & Animation',
+    desc: 'Craft fluid 3D animations using Three.js, WebGL, and advanced shader techniques for photorealistic liquid effects.',
     color: 0xc084fc, // Purple
     cssGlow: styles.glowPurple,
   },
   {
     phase: 'Phase 03',
-    title: 'Explainable AI & Clinical Insights',
-    desc: 'Grad-CAM visualization highlights suspicious regions and generates interpretable diagnostic information.',
+    title: 'Optimization & Delivery',
+    desc: 'Fine-tune performance, optimize rendering, and deliver buttery-smooth 60fps animations across all devices.',
     color: 0xf472b6, // Pink
     cssGlow: styles.glowPink,
   },
@@ -288,10 +288,10 @@ export default function PipelineSection() {
   return (
     <section id="pipeline" ref={sectionRef} className={styles.pipelineSection}>
       <div className={styles.header}>
-        <p className={styles.eyebrow}>BRAIN MRI ANALYSIS WORKFLOW</p>
-        <h2 className={styles.title}>Brain MRI Analysis Pipeline</h2>
+        <p className={styles.eyebrow}>CREATIVE WORKFLOW</p>
+        <h2 className={styles.title}>Design to Development Pipeline</h2>
         <p className={styles.subtitle}>
-          Interactive visualization of the complete MRI diagnostic workflow from image acquisition to clinical insight generation.
+          Interactive visualization of our complete creative process from initial concept to final premium animation delivery.
         </p>
       </div>
 

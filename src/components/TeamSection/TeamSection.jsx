@@ -11,7 +11,7 @@ gsap.registerPlugin(ScrollTrigger)
 const TEAM = [
   {
     name: ['Utsav', 'Singh'],
-    role: 'AI Research',
+    role: 'Creative Director & 3D Artist',
     links: [
       { href: 'https://github.com/Utsav-Singh-35', label: 'GitHub', img: githubImg },
       { href: 'https://linkedin.com/in/utsav-singh', label: 'LinkedIn', img: linkedinImg, linkedin: true },
@@ -20,7 +20,7 @@ const TEAM = [
   },
   {
     name: ['Om', 'Singh'],
-    role: 'Medical Imaging',
+    role: 'Lead Designer & Animator',
     links: [
       { href: 'https://github.com/', label: 'GitHub', img: githubImg },
       { href: 'https://linkedin.com/in/', label: 'LinkedIn', img: linkedinImg, linkedin: true },
@@ -29,7 +29,7 @@ const TEAM = [
   },
   {
     name: ['Vikas', 'Tiwari'],
-    role: 'Full Stack Development',
+    role: 'Full Stack Developer',
     links: [
       { href: 'https://github.com/', label: 'GitHub', img: githubImg },
       { href: 'https://linkedin.com/in/', label: 'LinkedIn', img: linkedinImg, linkedin: true },
@@ -75,7 +75,7 @@ export default function TeamSection() {
 
   return (
     <section id="team" ref={sectionRef} className={styles.teamSection}>
-      <h2 ref={titleRef} className={styles.teamTitle}>Meet the Developers</h2>
+      <h2 ref={titleRef} className={styles.teamTitle}>Meet the Creative Team</h2>
       <div className={styles.teamGridWrapper}>
         <div className={styles.teamGrid}>
           {TEAM.map(member => (

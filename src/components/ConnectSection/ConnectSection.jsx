@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import footerBg from '../../assets/footer.png'
+import Logo from '../../assets/Logo.png'
 import styles from './ConnectSection.module.css'
 
 gsap.registerPlugin(ScrollTrigger)
@@ -55,7 +55,6 @@ export default function ConnectSection() {
       id="contact"
       ref={sectionRef}
       className={styles.connectSection}
-      style={{ backgroundImage: `url(${footerBg})` }}
     >
       <div className={styles.overlay} />
 
@@ -73,15 +72,12 @@ export default function ConnectSection() {
           {/* Brand */}
           <div className={styles.connectBrand}>
             <div className={styles.connectLogo}>
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                <circle cx="12" cy="12" r="10"/>
-                <path d="M12 2a10 10 0 0 1 0 20M12 2a10 10 0 0 0 0 20M2 12h20"/>
-              </svg>
-              <span>NeuraSight</span>
+              <img src={Logo} alt="Liquid Sphere" />
+              <span className={styles.connectLogoText}>Liquid Sphere</span>
             </div>
-            <p className={styles.connectBrandSub}>AI-POWERED MEDICAL IMAGING PLATFORM</p>
+            <p className={styles.connectBrandSub}>INNOVATIVE DIGITAL SOLUTIONS</p>
             <p className={styles.connectBrandDesc}>
-              Advanced brain MRI analysis powered by deep learning, explainable AI, and clinical decision support systems.
+              Transforming ideas into reality with cutting-edge technology, creative design, and seamless user experiences.
             </p>
           </div>
 
@@ -89,9 +85,9 @@ export default function ConnectSection() {
           <div className={styles.connectCol}>
             <h4 className={styles.connectColTitle}>CONTACT</h4>
             <ul className={styles.connectLinks}>
-              <li><a href="mailto:neurasight@project.com">neurasight@project.com <span>→</span></a></li>
-              <li><a href="research.html">Research <span>→</span></a></li>
-              <li><a href="#">Dataset <span>→</span></a></li>
+              <li><a href="mailto:hello@liquidsphere.com">hello@liquidsphere.com <span>→</span></a></li>
+              <li><a href="#about">About <span>→</span></a></li>
+              <li><a href="#team">Team <span>→</span></a></li>
               <li><a href="https://github.com/">GitHub <span>→</span></a></li>
             </ul>
           </div>

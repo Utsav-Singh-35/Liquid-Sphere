@@ -71,11 +71,23 @@
 .connectLogo {
   display: flex;
   align-items: center;
-  gap: 0.8rem;
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #fff;
+  gap: 0.9rem;
+  height: 35px;
   margin-bottom: 0.8rem;
+}
+
+.connectLogo img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+.connectLogoText {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
 }
 
 .connectBrandSub {

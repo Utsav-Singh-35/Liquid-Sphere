@@ -335,13 +335,29 @@
   }
 }
 
-.videoLogo {
+.videoLogoContainer {
   position: absolute;
   top: 3rem;
   left: 3rem;
-  width: 50px;
-  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   z-index: 3;
+}
+
+.videoLogo {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+.videoLogoText {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  white-space: nowrap;
 }
 
 .videoText {
@@ -399,11 +415,18 @@
     left: 2rem;
   }
 
-  .videoLogo {
+  .videoLogoContainer {
     top: 2rem;
     left: 2rem;
-    width: 40px;
+    gap: 0.75rem;
+  }
+
+  .videoLogo {
     height: 40px;
+  }
+
+  .videoLogoText {
+    font-size: 1.3rem;
   }
 
   .backButton {

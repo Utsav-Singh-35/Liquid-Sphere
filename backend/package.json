@@ -1,7 +1,7 @@
 {
-  "name": "neurasight-backend",
+  "name": "liquid-sphere-backend",
   "version": "1.0.0",
-  "description": "Secure authentication backend for NeuraSight",
+  "description": "Secure authentication backend for Liquid Sphere",
   "main": "server.js",
   "type": "module",
   "scripts": {
@@ -10,7 +10,7 @@
     "test": "jest --coverage"
   },
   "keywords": ["auth", "jwt", "express", "mongodb"],
-  "author": "NeuraSight Team",
+  "author": "Liquid Sphere Team",
   "license": "MIT",
   "dependencies": {
     "express": "^4.18.2",

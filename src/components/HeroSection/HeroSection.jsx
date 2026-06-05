@@ -61,13 +61,13 @@ export default function HeroSection() {
     // Set initial opacity to 0 guaranteeing an absolutely empty viewport before timeline loads
     <section id="home" ref={containerRef} className={styles.hero} style={{ opacity: 0 }}>
       <div className={styles.heroContainer}>
-        <h1 ref={titleRef} className={styles.heroTitle}>NeuraSight</h1>
+        <h1 ref={titleRef} className={styles.heroTitle}>Liquid Sphere</h1>
 
         <div className={styles.heroTags}>
-          <div className={`${styles.tag} ${styles.tagTopLeft}`}>[ 97.4% Accuracy ]</div>
-          <div className={`${styles.tag} ${styles.tagTopRight}`}>[ 4 Tumor Classes ]</div>
-          <div className={`${styles.tag} ${styles.tagBottomLeft}`}>[ 7000+ MRI Scans ]</div>
-          <div className={`${styles.tag} ${styles.tagBottomRight}`}>[ Powered by Deep Learning ]</div>
+          <div className={`${styles.tag} ${styles.tagTopLeft}`}>[ Fluid Design ]</div>
+          <div className={`${styles.tag} ${styles.tagTopRight}`}>[ 3D Animation ]</div>
+          <div className={`${styles.tag} ${styles.tagBottomLeft}`}>[ Modern UI/UX ]</div>
+          <div className={`${styles.tag} ${styles.tagBottomRight}`}>[ Premium Quality ]</div>
         </div>
 
         <div ref={videoRef} className={styles.videoWrapper}>

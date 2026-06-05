@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import Logo from '../assets/Logo.png'
 import styles from './Dashboard.module.css'
 
 export default function Dashboard() {
@@ -33,7 +34,10 @@ export default function Dashboard() {
       {/* Header */}
       <header className={styles.header}>
         <div className={styles.headerContent}>
-          <h1 className={styles.logo}>NeuraSight</h1>
+          <div className={styles.logo}>
+            <img src={Logo} alt="Liquid Sphere" />
+            <span className={styles.logoText}>Liquid Sphere</span>
+          </div>
           <button onClick={handleLogout} className={styles.logoutButton}>
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
